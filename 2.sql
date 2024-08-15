@@ -6,6 +6,12 @@ select * from Employees
 
 select * from vw_employee
 
+create view vw_order
+as
+select * from Orders
+
+select * from vw_order
+
 create view vw_product
 as
 select * from Products
@@ -33,9 +39,21 @@ select * from [Order Details] where UnitPrice>100
 
 select * from vw_OrderUnitPrice
 
+create view vw_deneme
+as
+select * from Employees where Country =('USA')
+
+select * from vw_deneme
+
 
 create view vw_selectShipFrance
 as
 select * from Orders where ShipCountry in ('France')
 
 select * from vw_selectShipFrance
+
+create view vw_deneme2
+as
+select * from Customers where City = 'Berlin'
+
+select * from vw_deneme2

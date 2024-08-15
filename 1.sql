@@ -9,5 +9,5 @@ begin
 	print ('Silme iþlemi gerçekleþtiremezsiniz')
 end	
 
-delete from Employees where EmployeeID = 1
+delete from Employees where EmployeeID = 10
 select * from Employees

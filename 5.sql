@@ -8,7 +8,7 @@ basan bir raporlama fonksiyonudur.
 
 */
 use Northwind
-select * from Orders
+
 -- þehire göre satýþ adetleri
 select ShipCity, COUNT(OrderID) [Satýþ adedi] from Orders
 group by ShipCity
